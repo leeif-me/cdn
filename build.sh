@@ -5,11 +5,10 @@ set -e
 git add -A
 
 # Commit changes.
-msg="update `date`"
+msg="update `date +%s`"
 if [ $# -eq 1 ]
   then msg="$1"
 fi
 git commit -m "$msg"
 
-# 推送到 github 
-git push origin master
+git push origin main
