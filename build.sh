@@ -5,7 +5,7 @@ set -e
 git add -A
 
 # Commit changes.
-msg="update `date +%s`"
+msg="update `date`"
 if [ $# -eq 1 ]
   then msg="$1"
 fi
